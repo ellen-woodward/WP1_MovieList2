@@ -7,12 +7,4 @@ import { MovieService } from './movie.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  movies = [] as any;
-
-  constructor(private movieService: MovieService){}
-
-  ngOnInit(){
-    this.movies = this.movieService.getMovies();
-    console.log(this.movies);
-  }
 }
